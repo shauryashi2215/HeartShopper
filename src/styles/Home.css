@@ -1,0 +1,116 @@
+
+.String-ring {
+  min-width: 200px;
+  height: 250px;
+  background: #2d1147;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--accent);
+}
+
+.String-ring:hover {
+  transform: translateY(-5px);
+}
+
+.String-ring h3 {
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Product Cards Section */
+.card-section {
+  padding: 3rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ring {
+   width: 280px;
+  height: 350px;
+  background: #2d1147;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ring:hover {
+  transform: translateY(-5px);
+}
+
+/* Bottom Hero */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 5%;
+  border-top: 1px solid #2d1147;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--accent);
+  font-family: Georgia, serif;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.hero h3 {
+  color: var(--subtext);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+.Checkout-btn {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.Checkout-btn:hover {
+  background: var(--accent-hover);
+}
+
+.card-item {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.card-item h3 {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.card-item p {
+  font-size: 0.9rem;
+  color: var(--subtext);
+  font-style: italic;
+}

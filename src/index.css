@@ -1,0 +1,13 @@
+:root {
+  --bg: #1a0a2e;
+  --navbar: #2d1147;
+  --accent: #e8579a;
+  --accent-hover: #c73d7e;
+  --text: #f5e6ff;
+  --subtext: #b39dcc;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}

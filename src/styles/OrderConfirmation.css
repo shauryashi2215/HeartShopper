@@ -1,0 +1,102 @@
+.confirmation-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 5%;
+  gap: 2rem;
+}
+
+.confirmation-icon {
+  font-size: 6rem;
+  animation: popIn 0.8s ease forwards;
+}
+
+.confirmation-title {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  color: var(--accent);
+  letter-spacing: 3px;
+  animation: slideUp 0.8s ease 0.3s both;
+}
+
+.confirmation-delivery {
+  font-size: 1.2rem;
+  color: var(--text);
+  line-height: 2;
+  animation: slideUp 0.8s ease 0.5s both;
+}
+
+.confirmation-delivery span {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.confirmation-message {
+  max-width: 600px;
+  background: #2d1147;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  padding: 2.5rem;
+  animation: slideUp 0.8s ease 0.7s both;
+}
+
+.confirmation-message p {
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  font-style: italic;
+}
+
+.confirmation-details {
+  background: #2d1147;
+  border-radius: 16px;
+  border: 1px solid var(--accent);
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  animation: slideUp 0.8s ease 0.9s both;
+}
+
+.confirmation-details h3 {
+  font-family: Georgia, serif;
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.confirmation-details p {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.back-home-btn {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.9rem 2.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  animation: slideUp 0.8s ease 1.1s both;
+}
+
+.back-home-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

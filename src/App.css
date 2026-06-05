@@ -1,0 +1,50 @@
+.Splash {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.Splash-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  animation: popIn 1s ease forwards;
+}
+
+.Splash-title {
+  color: var(--accent);
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  letter-spacing: 4px;
+  animation: slideUp 1s ease 0.5s both;
+}
+
+.Splash-sub {
+  color: var(--subtext);
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  animation: slideUp 1s ease 0.8s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

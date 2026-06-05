@@ -1,0 +1,36 @@
+.About-section {
+  padding: 4rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About-tittle {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: #2d1147;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  padding: 3rem;
+}
+
+.container-content {
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: center;
+  font-style: italic;
+}
+
+.lytext{
+    font-style: italic;
+}
