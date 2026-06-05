@@ -10,19 +10,6 @@ const products = [
     rating: 5,
     reviews: 1,
     link: "/product/1"
-  },
-
-  {
-    id: 2,
-    name: "Your New Gift Name",
-    tagline: "Your tagline here",
-    description: "Your description here",
-    emoji: "🎸",
-    price: "Your Smile",
-    materials: ["Material 1", "Material 2"],
-    rating: 5,
-    reviews: 0,
-    link: "/product/2"
   }
 ]
 
