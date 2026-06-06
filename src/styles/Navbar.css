@@ -41,3 +41,47 @@
     color: var(--accent);
 
 }
+
+.Nav-login {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Nav-login:hover {
+  background: var(--accent-hover);
+}
+
+.Nav-logout {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Nav-logout:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.Nav-user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.Nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}

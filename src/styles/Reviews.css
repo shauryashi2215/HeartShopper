@@ -1,0 +1,139 @@
+.reviews-section {
+  padding: 3rem 5%;
+  border-top: 1px solid #2d1147;
+}
+
+.reviews-section h2 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.review-form {
+  background: #2d1147;
+  border-radius: 16px;
+  border: 1px solid var(--accent);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.review-form-user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.review-form-user span {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.review-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 1.5rem;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+
+.star.active {
+  opacity: 1;
+}
+
+.review-input {
+  background: #1a0a2e;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--text);
+  font-size: 1rem;
+  resize: none;
+  height: 100px;
+  font-family: Georgia, serif;
+}
+
+.review-input:focus {
+  outline: none;
+  border-color: var(--accent-hover);
+}
+
+.review-submit {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.review-submit:hover {
+  background: var(--accent-hover);
+}
+
+.review-login-msg {
+  color: var(--subtext);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-card {
+  background: #2d1147;
+  border-radius: 16px;
+  border: 1px solid var(--accent);
+  padding: 1.5rem;
+  max-width: 600px;
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.review-username {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.review-rating {
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.reviews-placeholder {
+  color: var(--subtext);
+  font-style: italic;
+}

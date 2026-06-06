@@ -8,6 +8,7 @@ import {useEffect, useState} from 'react'
 import './App.css'
 import { AnimatePresence } from 'framer-motion'
 import { CartProvider } from './Context/CartContext'
+import { AuthProvider } from './Context/AuthContext'
 
 function App(){
   const [loading, setLoading] = useState(true);
@@ -26,19 +27,21 @@ function App(){
     )
   }
  return (
-  <CartProvider>
-    <BrowserRouter>
-      <AnimatePresence mode='wait'>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/product/:id" element={<Product />}/>
-          <Route path="/cart" element={<Cart />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/order-confirmation" element={<Confirmation />}/>
-        </Routes>
-      </AnimatePresence>
-    </BrowserRouter>
-  </CartProvider>
+  <AuthProvider>
+    <CartProvider>
+      <BrowserRouter>
+        <AnimatePresence mode='wait'>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/product/:id" element={<Product />}/>
+            <Route path="/cart" element={<Cart />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/order-confirmation" element={<Confirmation />}/>
+          </Routes>
+        </AnimatePresence>
+      </BrowserRouter>
+    </CartProvider>
+ </AuthProvider>
 )
 }
 

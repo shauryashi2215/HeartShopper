@@ -4,6 +4,7 @@ import '../styles/Product.css';
 import { useCart } from '../Context/CartContext'
 import { useNavigate, useParams } from 'react-router-dom'
 import products from '../data/products.js'
+import Reviews from '../features/Reviews.jsx'
 
 function Product() {
   const { addToCart } = useCart()
@@ -39,9 +40,7 @@ function Product() {
           <div className="product-details">
             <h1 className="product-name">{product.name}</h1>
 
-            <div className="product-rating">
-              ⭐⭐⭐⭐⭐ <span>({product.reviews} review)</span>
-            </div>
+          
 
             <p className="product-price">Price: {product.price}</p>
 
@@ -72,11 +71,7 @@ function Product() {
         </div>
 
         {/* Reviews Section */}
-        <div className="reviews-section">
-          <h2>Reviews</h2>
-          <p className="reviews-placeholder">Reviews coming soon... 💜</p>
-        </div>
-
+        <Reviews productId={1} />
       </div>
     </PageTransition>
   )
