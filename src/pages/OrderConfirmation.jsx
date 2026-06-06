@@ -16,7 +16,7 @@ function OrderConfirmation() {
         {/* Delivery message */}
         <p className="confirmation-delivery">
           Your order is on its way...<br />
-          Estimated Delivery: <span>Right Now 💜</span>
+          Estimated Delivery: <span>Right Now </span>
         </p>
 
         {/* Personal message */}
@@ -30,8 +30,8 @@ function OrderConfirmation() {
         <div className="confirmation-details">
           <h3>Order Details</h3>
           <p>📦 Product: Heart String Ring</p>
-          <p>🎸 Delivery by: Shaurya</p>
-          <p>💜 Price: Your Love</p>
+          <p>Delivery by: Shaurya</p>
+          <p>Price: Your Love</p>
         </div>
 
         {/* Back home */}

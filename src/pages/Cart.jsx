@@ -19,7 +19,7 @@ function Cart() {
               <p className="cart-empty-emoji">🛍️</p>
               <h3>Your cart is empty!</h3>
               <p>Looks like you haven't added anything yet...</p>
-              <Link to="/" className="cart-shop-btn">Go Shop 💜</Link>
+              <Link to="/" className="cart-shop-btn">Go Shop</Link>
             </div>
           ) : (
             <>
@@ -29,7 +29,7 @@ function Cart() {
                   <div className="cart-item-details">
                     <h3>{item.name}</h3>
                     <p>{item.tagline}</p>
-                    <span className="cart-item-price">Price: {item.price} 💜</span>
+                    <span className="cart-item-price">Price: {item.price} </span>
                   </div>
                   <button
                     className="remove-btn"
@@ -43,9 +43,9 @@ function Cart() {
               <div className="cart-summary">
                 <h3>Order Summary</h3>
                 <p>Items: {cart.length}</p>
-                <p>Total: Priceless 💜</p>
+                <p>Total: Priceless</p>
                 <Link to="/order-confirmation" className="cart-checkout-btn">
-                  Place Order 💜
+                  Place Order
                 </Link>
               </div>
             </>
