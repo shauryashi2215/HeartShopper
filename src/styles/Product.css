@@ -175,7 +175,7 @@
   border-radius: 20px;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .product-section {
     flex-direction: column;
     padding: 2rem 5%;
@@ -189,4 +189,4 @@
   .product-price {
     font-size: 1.4rem;
   }
-}
+}*/
