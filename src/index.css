@@ -11,3 +11,10 @@ body {
   background-color: var(--bg);
   color: var(--text);
 }
+/* Firebase popup fix */
+iframe[src*="firebase"] {
+  display: block !important;
+  visibility: visible !important;
+  position: fixed !important;
+  z-index: 9999 !important;
+}
