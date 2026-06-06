@@ -33,7 +33,7 @@ function Product() {
 
           {/* Left - Image */}
           <div className="product-image">
-            <div className="image-placeholder">{product.emoji}</div>
+            <img src={product.image} alt={product.name} className="product-img" />
           </div>
 
           {/* Right - Details */}

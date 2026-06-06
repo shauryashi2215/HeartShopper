@@ -16,7 +16,7 @@ function Home(){
   {products.map((product) => (
     <div key={product.id} className="ring">
       <Link to={product.link} className="card-item">
-        <div className="card-img">{product.emoji}</div>
+        <img src={product.homeImage} alt={product.name} className="card-img" />
         <h3>{product.name}</h3>
         <p>{product.tagline}</p>
       </Link>

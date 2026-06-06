@@ -25,8 +25,6 @@ function Slider(){
 
   return(
     <div className="slider">
-
-      {/*Main Slide*/}
       <AnimatePresence mode='wait'>
         <motion.div
           key={currentIndex}
@@ -36,20 +34,22 @@ function Slider(){
           transition={{ duration: 0.4, ease: 'easeInOut' }}
           className="slide"
         >
-          <p className="slide-emoji">{current.emoji}</p>
+          {current.sliderImage ? (
+            <img src={current.sliderImage} alt={current.name} className="slide-image" />
+          ) : (
+            <p className="slide-emoji">{current.emoji}</p>
+          )}
           <h2 className="slide-name">{current.name}</h2>
           <p className="slide-tagline">{current.tagline}</p>
-          {current.link &&(
+          {current.link && (
             <Link to={current.link} className="slide-btn">View Product</Link>
           )}
         </motion.div>
       </AnimatePresence>
 
-      {/*Arrows*/}
       <button className="arrow left" onClick={prevSlide}>&#8592;</button>
       <button className="arrow right" onClick={nextSlide}>&#8594;</button>
 
-      {/*Dots*/}
       <div className="dots">
         {products.map((_, index) => (
           <span
@@ -59,7 +59,6 @@ function Slider(){
           />
         ))}
       </div>
-
     </div>
   )
 }
