@@ -174,3 +174,19 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 2rem;
+  }
+
+  .product-name {
+    font-size: 1.8rem;
+  }
+
+  .product-price {
+    font-size: 1.4rem;
+  }
+}

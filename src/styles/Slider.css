@@ -134,3 +134,16 @@
   text-align: center;
   padding: 2rem;
 }
+
+@media (max-width: 768px) {
+  .arrow.left { left: 0.5rem; }
+  .arrow.right { right: 0.5rem; }
+  
+  .slide-name {
+    font-size: 1.8rem;
+  }
+
+  .slider {
+    height: 70vh;
+  }
+}
