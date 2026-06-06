@@ -85,3 +85,17 @@
   border-radius: 50%;
   border: 2px solid var(--accent);
 }
+
+@media (max-width: 768px) {
+  .Nav{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 5%;
+  }
+  .Nav-links {
+    gap: 1rem;
+  }
+  .Nav-brand{
+    font-size: 1.2rem;
+  }
+}
