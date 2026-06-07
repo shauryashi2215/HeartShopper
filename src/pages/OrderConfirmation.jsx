@@ -1,4 +1,4 @@
-import PageTransition from '../features/PageTransition'
+import PageTransition from '../features/PageTransitions'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import emailjs from '@emailjs/browser'
@@ -36,7 +36,7 @@ function OrderConfirmation() {
         <div className="confirmation-message">
           <p>
             Thank you for not just purchasing the ring but to choose me too,
-            this special moment brings us to a commitment of a lifetime.
+            this special moment brings us to a commitment of a lifetime!
           </p>
         </div>
 
