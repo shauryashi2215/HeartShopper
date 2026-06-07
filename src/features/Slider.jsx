@@ -22,6 +22,7 @@ function Slider(){
   }
 
   const current = products[currentIndex]
+  const isMobile = window.innerWidth <= 768
 
   return(
     <div className="slider">
@@ -35,7 +36,11 @@ function Slider(){
           className="slide"
         >
           {current.sliderImage ? (
-            <img src={current.sliderImage} alt={current.name} className="slide-image" />
+            <img 
+              src={isMobile && current.sliderMobileImage ? current.sliderMobileImage : current.sliderImage} 
+              alt={current.name} 
+              className="slide-image" 
+            />
           ) : (
             <p className="slide-emoji">{current.emoji}</p>
           )}

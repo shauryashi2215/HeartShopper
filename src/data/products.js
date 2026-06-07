@@ -8,6 +8,7 @@ const products = [
     image: "/images/product.jpeg",
     homeImage: "/images/home.jpeg",
     sliderImage: "/images/slider.jpeg",
+    sliderMobileImage: "/images/slider-mobile.jpeg",
     price: "Your Love",
     materials: [ "Guitar string ball ends", "Made with love by Shaurya"],
     rating: 5,
