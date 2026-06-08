@@ -135,7 +135,7 @@
   padding: 2rem;
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
   .slider{
     height: 60vh;
   }
@@ -151,4 +151,4 @@
   }
   .arrow.left {left: 0.3rem;}
   .arrow.right {right: 0.3rem;}
-}
+}*/
