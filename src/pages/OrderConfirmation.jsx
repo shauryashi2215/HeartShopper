@@ -11,10 +11,10 @@ function OrderConfirmation() {
       'service_y2tqrlf',
       'template_r3gvvco',
       {
-        to_name: 'Yashi',
+        to_name: '',
         email: '',
         product_name: 'Heart String Ring',
-        delivery_by: 'Shaurya',
+        delivery_by: '',
         price: 'Your Love',
       },
       '-HAFALzrftSwYyown'
