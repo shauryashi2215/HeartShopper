@@ -12,7 +12,7 @@ function OrderConfirmation() {
       'template_r3gvvco',
       {
         to_name: 'Yashi',
-        email: 'ygupta010182@gmail.com',
+        email: '',
         product_name: 'Heart String Ring',
         delivery_by: 'Shaurya',
         price: 'Your Love',
